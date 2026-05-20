@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manit Trehan — AI & ML Enthusiast | Portfolio</title>
+    <meta name="description" content="Portfolio of Manit Trehan — A passionate AI & Machine Learning enthusiast building intelligent systems that solve real-world problems.">
+    <meta name="keywords" content="Manit Trehan, AI, Machine Learning, Deep Learning, Portfolio, Developer, Python, NLP">
+    <meta property="og:title" content="Manit Trehan — AI & ML Enthusiast">
+    <meta property="og:description" content="Building intelligent systems that solve real-world problems. Explore my projects in AI, ML, and full-stack development.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MT<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Manit Trehan</span>
+            </h1>
+            <div class="hero-subtitle-wrapper">
+                <span class="hero-subtitle-prefix">I </span>
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-description">
+                A deeply passionate AI & Machine Learning enthusiast dedicated to building intelligent systems that solve real-world problems.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://github.com/manittrehan" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="7">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Domains</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// who am i</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-lead">
+                        I am a deeply passionate <strong>Artificial Intelligence & Machine Learning</strong> enthusiast dedicated to building intelligent systems that solve real-world problems.
+                    </p>
+                    <p>
+                        Currently, I am bridging the gap between theoretical ML and scalable software development by building, breaking, and deploying models. From crafting neural network architectures from scratch to engineering end-to-end data pipelines, I thrive at the intersection of research and production.
+                    </p>
+                    <p>
+                        When I'm not training models, you'll find me contributing to open-source, exploring cutting-edge papers on Generative AI, or building full-stack applications that bring ML to life.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🚀</div>
+                            <div>
+                                <strong>Driven By</strong>
+                                <span>Generative AI & Neural Networks</span>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">🌱</div>
+                            <div>
+                                <strong>Deep Diving Into</strong>
+                                <span>Advanced DL & MLOps</span>
+                            </div>
+                        </div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">💡</div>
+                            <div>
+                                <strong>Looking to Collaborate</strong>
+                                <span>Open-source AI & ML Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual reveal">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">manit.py</span>
+                        </div>
+                        <div class="code-body">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">ManitTrehan</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(self):
+        self.name = <span class="code-string">"Manit Trehan"</span>
+        self.role = <span class="code-string">"AI/ML Enthusiast"</span>
+        self.location = <span class="code-string">"Gurugram, India"</span>
+        self.interests = [
+            <span class="code-string">"Deep Learning"</span>,
+            <span class="code-string">"Generative AI"</span>,
+            <span class="code-string">"NLP"</span>,
+            <span class="code-string">"Computer Vision"</span>
+        ]
+        
+    <span class="code-keyword">def</span> <span class="code-func">get_current_focus</span>(self):
+        <span class="code-keyword">return</span> [
+            <span class="code-string">"Building RAG pipelines"</span>,
+            <span class="code-string">"Fine-tuning LLMs"</span>,
+            <span class="code-string">"Deploying ML models"</span>
+        ]</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// what i work with</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Tools</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">Python</span>
+                        <span class="skill-tag" data-level="advanced">JavaScript</span>
+                        <span class="skill-tag" data-level="intermediate">HTML/CSS</span>
+                        <span class="skill-tag" data-level="intermediate">SQL</span>
+                        <span class="skill-tag" data-level="intermediate">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">PyTorch</span>
+                        <span class="skill-tag" data-level="advanced">TensorFlow</span>
+                        <span class="skill-tag" data-level="advanced">Scikit-learn</span>
+                        <span class="skill-tag" data-level="intermediate">Hugging Face</span>
+                        <span class="skill-tag" data-level="intermediate">LangChain</span>
+                        <span class="skill-tag" data-level="intermediate">FAISS</span>
+                        <span class="skill-tag" data-level="intermediate">OpenCV</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3>Web & Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="intermediate">React</span>
+                        <span class="skill-tag" data-level="intermediate">Node.js</span>
+                        <span class="skill-tag" data-level="intermediate">Vite</span>
+                        <span class="skill-tag" data-level="basic">Flask</span>
+                        <span class="skill-tag" data-level="basic">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <h3>Dev & Data</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-level="advanced">Git / GitHub</span>
+                        <span class="skill-tag" data-level="intermediate">Jupyter</span>
+                        <span class="skill-tag" data-level="intermediate">NumPy</span>
+                        <span class="skill-tag" data-level="intermediate">Pandas</span>
+                        <span class="skill-tag" data-level="intermediate">Matplotlib</span>
+                        <span class="skill-tag" data-level="basic">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// what i've built</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">A selection of projects showcasing my work in AI, ML, and software development.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Hashtag Analysis -->
+                <article class="project-card reveal" id="project-hashtag">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" data-icon="📊">
+                            <div class="project-overlay">
+                                <span>Social Media Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Data Science</span>
+                            <span class="project-star">⭐ 1</span>
+                        </div>
+                        <h3 class="project-title">Hashtag-Based Social Media Analysis</h3>
+                        <p class="project-desc">Analyzing hashtags used on social media platforms and comparing their online popularity with real-world data and events to measure true impact vs viral noise.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Jupyter</span>
+                            <span>Data Analysis</span>
+                            <span>NLP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/manittrehan/Hashtag-Based-Social-Media-Analysis-and-Real-World-Comparison" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: AI Hex Game -->
+                <article class="project-card featured reveal" id="project-hex">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" data-icon="🎮">
+                            <div class="project-overlay">
+                                <span>AI Game Engine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">AI / Game Dev</span>
+                            <span class="featured-badge">⚡ Featured</span>
+                        </div>
+                        <h3 class="project-title">AI Hex Game Engine</h3>
+                        <p class="project-desc">An 11×11 Hex game engine with multi-agent AI using MCTS, Alpha-Beta pruning, and Neural Policy-Value Networks. Features PUCT-based search and adaptive endgame strategies.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>MCTS</span>
+                            <span>Pygame</span>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/manittrehan/Ai-Hex-Game-Engine-With-Multi-Agent-Search" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Bladder Tissue Classification -->
+                <article class="project-card reveal" id="project-bladder">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" data-icon="🔬">
+                            <div class="project-overlay">
+                                <span>Medical AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Healthcare AI</span>
+                        </div>
+                        <h3 class="project-title">Bladder Tissue Classification</h3>
+                        <p class="project-desc">Deep learning-based classification system for bladder tissue analysis, applying computer vision techniques to medical imaging for accurate tissue categorization.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Deep Learning</span>
+                            <span>Computer Vision</span>
+                            <span>Jupyter</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/manittrehan/bladder-tissue-classification" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: EduConnect -->
+                <article class="project-card reveal" id="project-educonnect">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" data-icon="🎓">
+                            <div class="project-overlay">
+                                <span>EdTech Platform</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Full Stack</span>
+                        </div>
+                        <h3 class="project-title">EduConnect</h3>
+                        <p class="project-desc">A full-stack education platform designed to connect learners and educators, featuring interactive interfaces and an intuitive learning experience.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Education</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/manittrehan/educonnect" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Likhlo -->
+                <article class="project-card reveal" id="project-likhlo">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" data-icon="📝">
+                            <div class="project-overlay">
+                                <span>Productivity App</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Web App</span>
+                        </div>
+                        <h3 class="project-title">Likhlo</h3>
+                        <p class="project-desc">A simple and lightweight note-taking app for quick, clutter-free note management. Perfect for jotting down ideas, creating to-do lists, or writing anything you want to remember.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Web App</span>
+                            <span>Productivity</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/manittrehan/likhlo" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: CodeFlow -->
+                <article class="project-card reveal" id="project-codeflow">
+                    <div class="project-image">
+                        <div class="project-image-placeholder" data-icon="⚡">
+                            <div class="project-overlay">
+                                <span>Developer Tool</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span class="project-category">Developer Tools</span>
+                        </div>
+                        <h3 class="project-title">CodeFlow</h3>
+                        <p class="project-desc">A developer-focused tool designed to streamline coding workflows and enhance developer productivity with intuitive interfaces and smart features.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Developer Tools</span>
+                            <span>Workflow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/manittrehan/codeflow" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="projects-cta reveal">
+                <a href="https://github.com/manittrehan?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <span>View All on GitHub</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JOURNEY SECTION ===== -->
+    <section class="section journey" id="journey">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// my path</span>
+                <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot current"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2026 — Present</div>
+                        <h3>Building & Shipping AI Projects</h3>
+                        <p>Focused on deploying end-to-end ML pipelines, fine-tuning LLMs with QLoRA/PEFT, and building RAG-based chatbots for real-world applications like Lok Sabha Samachar.</p>
+                        <div class="timeline-tags">
+                            <span>RAG</span>
+                            <span>LLM Fine-Tuning</span>
+                            <span>NLP</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3>Deep Dive into AI/ML & Computer Vision</h3>
+                        <p>Built multi-agent AI game engines, medical imaging classifiers, and social media analytics pipelines. Explored MCTS, neural policy networks, and advanced deep learning architectures.</p>
+                        <div class="timeline-tags">
+                            <span>PyTorch</span>
+                            <span>Computer Vision</span>
+                            <span>MCTS</span>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3>Full-Stack & Web Development</h3>
+                        <p>Developed full-stack projects like EduConnect and Likhlo. Learned React, Node.js, and modern web development workflows to complement ML engineering skills.</p>
+                        <div class="timeline-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Full Stack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">The Beginning</div>
+                        <h3>Discovering the World of Code</h3>
+                        <p>Started my programming journey with Python and C++, discovered a passion for algorithms and data structures, and soon fell in love with the magic of Machine Learning.</p>
+                        <div class="timeline-tags">
+                            <span>Python</span>
+                            <span>C++</span>
+                            <span>Algorithms</span>
+                            <span>Foundations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">// let's connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Whether you have a question, a project idea, or just want to say hi — my inbox is always open!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards reveal">
+                    <a href="mailto:manit.trehan1@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <h3>Email</h3>
+                            <span>manit.trehan1@gmail.com</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/manittrehan" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-github">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <h3>GitHub</h3>
+                            <span>manittrehan</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manit-trehan-8658602b4/" target="_blank" rel="noopener noreferrer" class="contact-card" id="contact-linkedin">
+                        <div class="contact-card-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <h3>LinkedIn</h3>
+                            <span>Manit Trehan</span>
+                        </div>
+                        <svg class="contact-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm">
+                        <!-- Web3Forms — Replace YOUR_ACCESS_KEY with your real key from https://web3forms.com -->
+                        <input type="hidden" name="access_key" value="662c7605-e0c3-4e8a-8c27-9a700663291e">
+                        <input type="hidden" name="subject" value="New Portfolio Contact from Website">
+                        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                        <input type="checkbox" name="botcheck" style="display: none;">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>MT<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">Designed & built with ❤️ by Manit Trehan</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/manittrehan" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manit-trehan-8658602b4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="mailto:manit.trehan1@gmail.com" aria-label="Email">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Manit Trehan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
